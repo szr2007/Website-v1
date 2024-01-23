@@ -1,0 +1,224 @@
+header{
+    display: flex;
+
+    justify-self: space-between;
+    align-items: center;
+    top: 0px;
+    padding: 30px 10%;
+    height: 60px;
+    width: 100%;
+    background-color: #1a1a1a;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    position: fixed;
+
+    z-index: 1;
+}
+
+#vision{
+    bottom: 0px;
+    right: 0px;
+
+  
+    height: 60px;
+    width: 60px;
+    
+    position: fixed;
+
+    z-index: 1;
+}
+
+#vision button, #vision img{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.logo{ 
+    cursor: pointer;
+    position: relative;
+    margin-right: auto;
+    left: 5rem;
+    width: 40px;
+    height: auto;
+}
+
+.nav_links{
+    list-style: none;
+    position: relative;
+    right: 5rem;
+    width: auto;
+    height: auto;
+}
+
+.nav_links li{
+    display: inline-block;
+}
+
+.nav_links li a{
+
+    text-decoration: none;
+    padding: 0px 5px;  
+}
+
+.nav_links li a:hover{
+    transition: all 0.3s ease 0s;
+    opacity: 30%;
+}
+
+.diverter{
+    padding: 0px 2px; 
+
+    vertical-align: -5px;
+    
+    width: 0.9px;
+    height: 22px;
+    margin: 0px 7px;
+
+    background: #262626;
+    border-radius: 5px;
+}
+
+.nav_links li #dropdown-btn{
+    background-color: #1a1a1a;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+
+.nav_links li #dropdown-btn:hover, .menu-toggle:hover, footer a:hover, #vision button:hover {
+    transition: all 0.6s ease 0s;
+    opacity: 30%; 
+}
+
+#dropdown-menu {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    gap: 10px;
+    width: 7rem;
+    top: 30px; 
+    left: 122px;
+    background-color:#1a1a1a;
+    padding: 8px;
+
+    text-align: center;
+    transition: 0.1s ease-in-out;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #262626;
+    border-style: solid;
+
+    box-shadow: 0px 0px 4px rgb(19, 19, 19);
+  }
+
+  .menu-diverter{ 
+    height: 0.15rem;
+    width: 7rem;
+
+    background: #262626;
+    border-radius: 5px;
+}
+
+.bugermenu-diverter{
+    height: 0.3rem;
+    width: 2.5rem;
+
+    background: white;
+    border-radius: 5px;
+    margin: 0.5rem;
+}
+
+#menu-toggle{
+    cursor: pointer;
+    position: relative;
+    right: 5rem;
+    width: 4rem;
+    border: none;
+    height: 50px;
+    background-color: transparent;
+}
+
+#burgermenu{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    gap: 10px;
+ 
+    right: 50px;
+    background-color:#1a1a1a;
+    padding: 8px;
+    list-style: none;
+
+    text-align: center;
+    transition: 0.1s ease-in-out;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #262626;
+    border-style: solid;
+
+    box-shadow: 0px 0px 4px rgb(19, 19, 19);
+
+    font-size: 25px;
+}
+
+.burger{
+    display: none;
+}
+
+@media (max-width: 1200px) {
+        header .nav_links li{
+            display: none;
+        }
+
+        header .burger{
+            display: block; 
+        }
+
+        footer h1{
+            font-size: 4vw !important;
+           
+        }
+}
+
+
+footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(0, 180, 90, 1);
+   
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    text-align: center;
+}
+
+footer h1{
+    color: white;
+    font-size: 3vw;
+    text-decoration: underline;
+}
+
+footer p{
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    
+}
+footer a{
+    text-decoration: none;
+    margin-left: auto;
+    color: white;
+   
+}
+
+
+  
+
+

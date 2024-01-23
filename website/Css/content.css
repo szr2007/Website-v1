@@ -1,0 +1,245 @@
+body{
+    margin:0px;
+    background-color: var(--body-background);
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../Roboto-Regular.ttf);
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+button{
+  color: white;
+}
+
+*{    
+    font-family: myFirstFont;
+    font-weight: 700;
+    color: var(--text-color);
+    margin: 0;
+   
+}
+
+:root{
+  --text-color: white;
+  --body-background: #1a1a1a;
+  --section1-background: rgba(38, 38, 38, 1);
+  --section2-background: rgba(30, 30, 30, 1);
+}
+
+
+/**hero Container**/
+
+.hero-container{
+    height: 640px;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .highlight-dot {
+    height: 460px;
+    min-width: 460px;
+    background-color: #00B45A;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .dot {
+    height: 450px;
+    width: 450px;
+    background-color: #2D2D2D;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .dot img{
+    width: 60%;
+    margin: auto;
+  }
+
+  .hero-img{
+    width: 50%;
+  }
+  
+  .hero-text h1{
+    font-size: 70px;
+    width: 700px;
+  }
+  
+  .hero-text p{
+    margin-top: 270px;
+    font-size: 26px;
+    width: 400px;
+  }
+  
+  .hero-text .highlight{
+    color: rgba(0, 180, 90, 1);
+  }
+
+  .divider{
+    height: 3px;
+    border-radius: 2px;
+    background-color: white;
+  }
+  
+  .container1{
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    font-size: 30px;
+    background-color: var(--section1-background);
+  }
+  .container1 h1, .container2 h1{
+    font-size: 60px;
+  }
+
+  .container1 p, .container2 p{
+    padding-top: 50px;
+  }
+
+  .container1-section2{
+    padding-top: 80px;
+  }
+
+  .container1 div, .container h1, .container2 div, .container2 h1{
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .container1-section2-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 70px;
+  }
+  .container1-section2-flex div{
+    margin-top: 0;
+  }
+  .container1-section2-flex .divider, .container2-section1-flex .divider{
+    width: 480px;
+    margin-left: -5px;
+  }
+
+  .container2-section1-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 70px;
+  }
+
+
+  .container2{
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    font-size: 30px;
+    background-color: sec;
+  }
+
+
+  @media (max-width: 1200px) {
+  
+    .highlight-dot {
+      height: 260px;
+      min-width: 260px;
+    }
+    .dot {
+      height: 250px;
+      width: 250px;
+    }
+    .dot img{
+      width: 60%;
+    }
+  
+
+    .container2-section2, .container2-section4{
+      display: flex;
+      flex-direction: column;
+      margin:auto;
+      gap:3rem
+    }
+  
+    .container1-section2 p{
+      width:fit-content;
+    }
+  
+    .container1-section1{
+      flex-direction: column;
+      gap: 0px;
+  
+    }
+    .container1-section2{
+      flex-direction: column;
+      gap: 3rem;
+      margin-left: 0;
+    }
+    .container1-section3{
+      flex-direction: column;
+    }
+  
+  
+    .hero-container{
+      margin-top: -70px;
+      flex-direction: column;
+      justify-content:space-around;
+    }
+  
+    .hero-text{
+      width: 500px;
+      text-align: center;
+    }
+  
+    .hero-text h1{
+      font-size: 3rem;
+      width: fit-content;
+    }
+  
+    .hero-text p{
+      margin-top: 30px;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .hero-img{
+      margin-top: 40px;
+      width: 400px;
+    }
+  
+    img{
+      width: 300px;
+    }
+
+    .container1 div, .container h1, .container2 div, .container2 h1{
+      width: 90vw;
+  
+      margin: auto;
+    }
+
+    .container1-section2-flex, .container2-section1-flex{
+      flex-direction: column;
+    }
+
+    .container1-section2-flex .divider, .container2-section1-flex .divider{
+      width: 90vw;
+    }
+  }
+  
+  
